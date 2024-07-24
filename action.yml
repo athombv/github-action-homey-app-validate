@@ -1,0 +1,6 @@
+# action.yml
+name: 'Homey App — Validate'
+description: 'Validate an app for Homey'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
