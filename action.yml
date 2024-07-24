@@ -1,6 +1,13 @@
 # action.yml
 name: 'Homey App — Validate'
 description: 'Validate an app for Homey'
+inputs:
+  level:
+    description: 'Validation level. Can be `debug`, `publish` or `verified`.'
+    required: false
+    default: 'publish'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.level }}

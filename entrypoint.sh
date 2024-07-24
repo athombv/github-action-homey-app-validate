@@ -3,4 +3,4 @@
 cd /github/workspace/
 
 npm ci --ignore-scripts
-npx homey app validate
+npx homey app validate --level $1
